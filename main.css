@@ -25,9 +25,9 @@ body {
     height: 165px; 
     justify-content: stretch;
     background-color: #A1A8B2;
-  }
+}
 
-  #logo {
+#logo {
     padding-top: 15px; 
     padding-left: 32%; 
     width: 140px; 
@@ -93,8 +93,8 @@ body {
     width: 100%; 
     height: 100%;
     grid-column: 1;
-    padding-left: 150px;  
-    padding-top: 150px; 
+    padding-left: 135px;  
+    padding-top: 100px; 
 }
 
 #intro-content > h3, #intro-content > h4 {
@@ -121,17 +121,53 @@ body {
 #links {
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr;
+  background-color: #102336; 
 }
 
 #caption {
-  font-family: 'Oswald'; 
-  color: #102336; 
+  font-family: 'Overpass'; 
+  color: white;
   font-size: 20px; 
   font-weight: 600; 
   text-decoration: none; 
+  padding-left: 100px; 
+  padding-bottom: 50px; 
 }
 
 #link {
   display: flex; 
   flex-direction: column; 
 }
+
+#photo {
+  width: 270px; 
+  height: 200px;
+  padding: 50px 100px 20px;   
+}
+
+#tour-photo {
+  width: 330px; 
+  height: 200px; 
+  padding: 50px 100px 20px; 
+}
+
+#footer {
+  background-color: rgb(39, 39, 39); 
+  height: 175px; 
+}
+
+#footer > #golflogo {
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-bottom: 20px; 
+  width: 100px; 
+  height: 100px; 
+}
+
+footer {
+  color: white; 
+  text-align: center; 
+  font-family: 'Overpass'; 
+}
+
