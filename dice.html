@@ -1,0 +1,31 @@
+<!DOCTYPE html> <!--Gianluca Zhang, Web Development, EVEN Period 7-8-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roll</title>
+    <script>
+        function initialize() { //this function is run when the page is loaded; sets the documents for the total and the two die
+            dice1 = document.getElementById("dice1"); 
+            dice2 = document.getElementById("dice2"); 
+            combinedTotal = document.getElementById("total"); 
+        }
+
+        function rollDice() { //this function is run when the button "Roll Dice" is clicked; sets a random integer between 1-6 for both dice and adds them together; sets the innerHTML for each div to the assigned value to display it
+            roll1 = Math.floor((Math.random() * 6)) + 1; 
+            roll2 = Math.floor((Math.random() * 6)) + 1; 
+            total = roll1 + roll2; 
+            dice1.innerHTML = roll1; 
+            dice2.innerHTML = roll2; 
+            combinedTotal.innerHTML = total; 
+        }
+    </script>
+</head>
+<body onload="initialize();">
+    <div id="dice1"></div> <!--Dice 1-->
+    <div id="dice2"></div> <!--Dice 2-->
+    <div id="total"></div> <!--Combined Total-->
+    <button onclick="rollDice();" id="roll">Roll Dice</button> <!--Roll Dice Button-->
+</body>
+</html>
